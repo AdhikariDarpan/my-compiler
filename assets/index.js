@@ -89,7 +89,7 @@ function extractInlineStylesAndScripts(htmlContent) {
   let elementCount = 1;
   doc.querySelectorAll("[style]").forEach(element => {
       let className = `drp_element_${elementCount}`;
-      element.classList.add(className);
+      element.className = className;
       let formattedStyle = element.getAttribute("style")
         .split(";")
         .map(line => line.trim())
