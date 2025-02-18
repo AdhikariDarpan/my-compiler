@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Compiler</title>
+    <link rel="stylesheet" href="assets/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-view">
+        <div class="tabs">
+          <button class="tab-button active" data-tab="html">index.html</button>
+          <button class="tab-button" data-tab="css">style.css</button>
+          <button class="tab-button" data-tab="js">script.js</button>
+          <button id="converter">Content to Html</button>
+          <button id="download" onclick="downloadHTML()">Download</button>
+        </div>
+        <div id="popup">
+          <div id="title">Paste Here</div>
+          <div id="editor" contenteditable="true">Paste me...</div>
+          <button id="finish">Finish</button>
+        </div>
+        <div class="code-editors">
+          <textarea
+            id="htmlCode"
+            class="code-editor active"
+            placeholder="Enter HTML code here..."
+          ></textarea>
+          <textarea
+            id="cssCode"
+            class="code-editor"
+            placeholder="Enter CSS code here..."
+          ></textarea>
+          <textarea
+            id="jsCode"
+            class="code-editor"
+            placeholder="Enter JavaScript code here..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="output-view">
+        <h3>OUTPUT</h3>
+        <iframe id="outputFrame"></iframe>
+      </div>
+    </div>
+    <footer>
+        <span
+          ><i>&copy;</i><span id="date"></span
+          ><a href="https://darpanadhikari.com.np" target="_blank">
+            DarpanAdhikari</a
+          >
+          || All right reserved</span
+        >
+      </footer>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
