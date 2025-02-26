@@ -142,6 +142,10 @@ iframe {
     background: blue;
     color: white;
     cursor: pointer;
+    z-index: 9999999;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 }
 footer {
     position: fixed;
